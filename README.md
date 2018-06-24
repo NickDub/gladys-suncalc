@@ -18,14 +18,19 @@ Moon phase value should be interpreted like this:
 
 ## Installation
 
-To install this module :
+To install this module:
 
-- Install the module in Gladys 
+On the Module / Advanced Gladys screen, manually install the module with the following information:  
+**Name:** Suncalc  
+**Version:** 0.1.0  
+**URL:** https://github.com/NicolasD-62/gladys-suncalc.git  
+**Slug:** suncalc  
+
 - Reboot Gladys 
 
 ## Usage
-### Sun
-To get actual position :
+### Sun data
+To get actual position:
 ```javascript
 var options = {
     latitude: 45,
@@ -41,8 +46,8 @@ gladys.modules.suncalc.sun.position(options)
     .catch(console.log);
 ```
 
-### Moon
-To get actual position :
+### Moon data
+To get actual position:
 ```javascript
 var options = {
     latitude: 45,
@@ -60,7 +65,7 @@ gladys.modules.suncalc.moon.position(options)
     .catch(console.log);
 ```
 
-To get actual illumination :
+To get actual illumination:
 ```javascript
 gladys.modules.suncalc.moon.illumination()
     .then((result) => {
