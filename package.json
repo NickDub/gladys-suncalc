@@ -1,0 +1,29 @@
+{
+  "name": "gladys-suncalc",
+  "version": "0.1.0",
+  "description": "Gladys sun position provider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasD-62/gladys-suncalc.git"
+  },
+  "keywords": [
+    "gladys",
+    "sun position",
+    "sunlight phases",
+    "moon position",
+    "lunar phase"
+  ],
+  "author": "Nicolas Dubois",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolasD-62/gladys-suncalc/issues"
+  },
+  "homepage": "https://github.com/NicolasD-62/gladys-suncalc#readme",
+  "dependencies": {
+    "suncalc": "^1.8.0"
+  }
+}
