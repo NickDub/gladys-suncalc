@@ -3,7 +3,7 @@
 [![dependencies Status](https://badgen.net/david/dep/NicolasD-62/gladys-suncalc)](https://david-dm.org/NicolasD-62/gladys-suncalc)
 
 # gladys-sunclac
-Gladys module to get sun and moon position (altidute and azimuth) and lunar phase in Gladys.
+Gladys module to get sun and moon position (altitude and azimuth) and lunar phase in Gladys.
 
 ## Installation
 
