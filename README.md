@@ -1,7 +1,35 @@
-Gladys Sunclac
-=======================
+![gladys version](https://badgen.net/badge/Gladys/%3E=%203.9/purple)
+![license](https://badgen.net/github/license/NicolasD-62/gladys-suncalc)
+[![dependencies Status](https://badgen.net/david/dep/NicolasD-62/gladys-suncalc)](https://david-dm.org/NicolasD-62/gladys-suncalc)
 
-This module allows you to get sun and moon position (altidute and azimuth) and lunar phase in Gladys.
+# gladys-sunclac
+Gladys module to get sun and moon position (altidute and azimuth) and lunar phase in Gladys.
+
+## Installation
+
+Install the module through Gladys modules pannel and reboot Gladys when it's done. 
+
+## Usage
+
+### Sun data
+
+To get actual position: 
+```javascript
+var options = {
+    latitude: 48.8583,
+    longitude: 2.2922
+};
+
+gladys.modules.suncalc.sun.position(options)
+    .then((result) => {
+        console.log(result);
+        console.log(result.altitude);
+        console.log(result.azimuth);
+    })
+    .catch(console.log);
+```
+
+### Moon data
 
 Moon phase value should be interpreted like this:
 
@@ -16,42 +44,11 @@ Moon phase value should be interpreted like this:
 |  0.75 | Last Quarter    |
 |       | Waning Crescent |
 
-## Installation
-
-To install this module:
-
-On the Module / Advanced Gladys screen, manually install the module with the following information:  
-**Name:** Suncalc  
-**Version:** 0.1.0  
-**URL:** https://github.com/NicolasD-62/gladys-suncalc.git  
-**Slug:** suncalc  
-
-- Reboot Gladys 
-
-## Usage
-### Sun data
-To get actual position:
+To get actual position: 
 ```javascript
 var options = {
-    latitude: 45,
-    longitude: 45
-};
-
-gladys.modules.suncalc.sun.position(options)
-    .then((result) => {
-        console.log(result);
-        console.log(result.altitude);
-        console.log(result.azimuth);
-    })
-    .catch(console.log);
-```
-
-### Moon data
-To get actual position:
-```javascript
-var options = {
-    latitude: 45,
-    longitude: 45
+    latitude: 48.8583,
+    longitude: 2.2922
 };
 
 gladys.modules.suncalc.moon.position(options)
@@ -65,7 +62,7 @@ gladys.modules.suncalc.moon.position(options)
     .catch(console.log);
 ```
 
-To get actual illumination:
+To get actual illumination: 
 ```javascript
 gladys.modules.suncalc.moon.illumination()
     .then((result) => {
